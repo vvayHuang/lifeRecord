@@ -1,0 +1,7 @@
+.pill-btn-bg-secondary{
+    &:hover{
+        background-color: $secondary;
+        border-color: $secondary;
+        color: $primary;
+    }
+}

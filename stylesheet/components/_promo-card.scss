@@ -1,0 +1,8 @@
+.promo-card{
+    transition-duration: .3s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+}
+.promo-card:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2) ;
+    transform: scale3d(1.01,1.01,1.01);
+}

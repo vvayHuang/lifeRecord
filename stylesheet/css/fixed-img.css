@@ -1,0 +1,8 @@
+.fixed-img .tooltips {
+  display: none;
+}
+
+.fixed-img .tooltips:hover {
+  display: block;
+}
+/*# sourceMappingURL=fixed-img.css.map */

@@ -1,0 +1,10 @@
+.fixed{
+    .tooltips{
+        display: none;
+    }
+}
+.fixed:hover{
+    .tooltips{
+        display: block;
+    }
+}

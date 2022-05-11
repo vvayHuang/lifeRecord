@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,UADM,CACN,SAAS,CAAA;EACL,OAAO,EAAE,IAAI;CAChB;;AAHL,AAII,UAJM,CAIN,SAAS,AAAA,MAAM,CAAA;EACX,OAAO,EAAE,KAAK;CACjB",
+    "sources": [
+        "../components/fixed-img.scss"
+    ],
+    "names": [],
+    "file": "fixed-img.css"
+}

@@ -1,0 +1,19 @@
+.img-title{
+    height: 80px;
+    @media (min-width:576px) {
+        height: 133px;
+    }
+}
+.bg-cover{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-step{
+    width: 100px;
+    height: 100px;
+    @media (min-width:576px) {
+        width: 203px;
+        height: 203px;
+    }
+}

@@ -1,0 +1,21 @@
+.list-trans{
+    position: relative;
+    h4{
+        transition: .3s ease;
+    }
+    span:first-child{
+        position: absolute;
+        left: 0;
+        transition: .3s ease;
+        opacity: 0;
+    }
+    &:hover{
+        color: rgba($color: $primary, $alpha: .9);
+        h4{
+            margin-left: 20px;
+        }
+        span:first-child{
+            opacity: 1;
+        }
+    }
+}

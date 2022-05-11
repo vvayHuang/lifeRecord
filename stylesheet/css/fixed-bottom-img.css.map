@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAA;EACb,mBAAmB,EAAE,OAAO;EAC5B,mBAAmB,EAAE,GAAG;CAC3B",
+    "sources": [
+        "../components/fixed-bottom-img.scss"
+    ],
+    "names": [],
+    "file": "fixed-bottom-img.css"
+}

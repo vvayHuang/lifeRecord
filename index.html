@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo/logo-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheet/css/all.css">
+    <script async src="//www.youtube.com/iframe_api"></script>
+    <title>生活唱片 ｜ NO RECORD, NO LIFE</title>
+    <style>
+        iframe {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="fixed-bottom d-none d-lg-block text-decoration-none fixed" style="left: 95%; bottom: 5%;">
+        <div class="tooltips rounded-3">
+            <p class="my-2 mx-auto text-center font-family-bebas-neue" style="writing-mode: tb;">NO RECORD, NO LIFE</p>
+        </div>
+        <img src="./images/fixed-1.png" class="" height="40vh" alt="go-to-top-fixed-img">
+    </a>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-75 backdrop-filter-blur-lg-5">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo/logo-title.png" height="40" alt="生活唱片logo">
+            </a>
+            <div class="input-group flex-nowrap w-25 rounded-pill border bg-secondary bg-opacity-50 d-lg-flex d-none">
+                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="search"
+                    aria-label="search" aria-describedby="addon-wrapping">
+                <button class="btn btn-outline-secondary bg-transparent border-0" type="button" id="button-addon1">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="./images/logo/logo-sm.png" alt="生活唱片logo">
+                    </h5>
+                    <div
+                        class="input-group flex-nowrap w-auto rounded-pill border bg-secondary bg-opacity-50 d-lg-none d-lg-flex">
+                        <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="search"
+                            aria-label="search" aria-describedby="addon-wrapping">
+                        <button class="btn btn-outline-secondary bg-transparent border-0" type="button"
+                            id="button-addon1">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item mx-lg-4 my-4 my-lg-0">
+                            <a class="nav-link p-0" href="shopping-guide.html">購物說明</a>
+                        </li>
+                        <li class="nav-item mx-lg-4 my-4 my-lg-0">
+                            <a class="nav-link p-0" href="store.html">所有商品</a>
+                        </li>
+                        <li class="nav-item mx-lg-4 my-4 my-lg-0">
+                            <a class="nav-link p-0" href="promo.html">最新推薦</a>
+                        </li>
+                        <li class="nav-item my-4 my-lg-0">
+                            <a class="nav-link btn btn-secondary btn-sm px-5 rounded-24px"
+                                href="buy-information.html">填寫訂購資訊</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 封面 -->
+    <section class="hero">
+        <div class="videobox">
+            <div id="YouTubeVideoPlayerAPI"></div>
+        </div>
+        <div class="font-family-bebas-neue hero-content text-nowrap  translate-middle">
+            NO RECORD, NO LIFE</div>
+    </section>
+    <!-- 內容 -->
+    <section class="py-5 py-lg-7">
+        <div class="container">
+            <!-- Service -->
+            <div class="align-items-center justify-content-center row flex-lg-row-reverse gy-4 mb-lg-7 mb-5">
+                <div class="col-lg-4">
+                    <p class="font-family-bebas-neue text-secondary fw-bold fs-4 mb-0 text-center text-lg-start">about
+                        us</p>
+                    <h2 class="text-center text-lg-start lh-lg">生活 唱片</h2>
+                    <p class="lh-lg">目前已代理全球多間音樂廠牌，音樂類型包含古典、爵士、西洋與獨立音樂。近年將實體音樂發行觸角延伸至黑膠唱片，獨家引進Light In The Attic、Music
+                        On Vinyl、Vinyl Passion等數間國外優質黑膠唱片廠牌，以饗愛樂人。未來將持續引進與挖掘更多值得一聽與收藏的好音樂，就是我們的經營理念。</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1536782365487-94eaef48851d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="生活 唱片 圖片" class="img-fluid">
+                </div>
+            </div>
+            <!-- 最新發行 -->
+            <div class="mb-lg-7 mb-5">
+                <h2 class="text-center mb-4">
+                    最新發行
+                </h2>
+                <div class="row row-cols-lg-4 row-cols-2 g-3 gx-lg-4">
+                    <div class="col">
+                        <a href="let-it-be-naked.html" class="card border-0 designer-card">
+                            <img src="./images/album/LetItBeNaked.jpeg" class="card-img" alt="Let It Be Naked">
+                            <div class="card-img-overlay font-family-bebas-neue text-white">
+                                <div class="bottom-0 position-absolute mb-2">
+                                    <h5 class="card-title fs-6">THE BEATLES</h5>
+                                    <p class="card-text fs-4">Let It Be... Naked</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="card border-0 designer-card">
+                            <img src="./images/album/TitanicRising.png" class="card-img" alt="Titanic Rising">
+                            <div class="card-img-overlay font-family-bebas-neue text-white">
+                                <div class="bottom-0 position-absolute mb-2">
+                                    <h5 class="card-title fs-6">Weyes</h5>
+                                    <p class="card-text fs-4">Titanic Rising</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="card border-0 designer-card">
+                            <img src="./images/album/PhysicalGraffiti.png" class="card-img" alt="Physical Graffiti">
+                            <div class="card-img-overlay font-family-bebas-neue text-white">
+                                <div class="bottom-0 position-absolute mb-2">
+                                    <h5 class="card-title fs-6">Led Zeppelin</h5>
+                                    <p class="card-text fs-4">Physical Graffiti</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="card border-0 designer-card">
+                            <img src="./images/album/FeelGoodInc.png" class="card-img" alt="Feel Good Inc.">
+                            <div class="card-img-overlay font-family-bebas-neue text-white">
+                                <div class="bottom-0 position-absolute mb-2">
+                                    <h5 class="card-title fs-6">Gorillaz</h5>
+                                    <p class="card-text fs-4">Feel Good Inc.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4 mt-lg-5">
+                    <a href="store.html"
+                        class="btn btn-outline-primary me-lg-2 px-5 rounded-pill pill-btn-bg-secondary">
+                        查看更多商品
+                    </a>
+                </div>
+            </div>
+            <!-- 最新推薦 -->
+            <div class="mb-lg-7 mb-5">
+                <h2 class="text-center mb-4">
+                    最新推薦
+                </h2>
+                <p class="text-center mb-5">滾石雜誌「史上五百張經典專輯」</p>
+                <div class="row row-cols-lg-3 row-cols-1 gy-3">
+                    <div class="col">
+                        <div class="card border-0 promo-card h-100">
+                            <img src="images/album/Highway61Revisited.jpeg" style="object-fit: cover;"
+                                class="cover-front-1" height="424" alt="Highway61Revisited-cover-front">
+                            <div class="card-body border-bottom p-lg-4">
+                                <h4 class="card-title font-family-bebas-neue">Highway 61 Revisited - Bob Dylan</h4>
+                                <p class="card-text mb-lg-4">★ 滾石雜誌、AMG 五顆星滿分一致推崇，滾石五百大專輯第四名<br>
+                                    ★ 收錄膾炙人口經典歌曲〈Like A Rolling Stone〉等 9 首創作，MONO 重製混音版<br>
+                                    ★ 歐陸最大經典黑膠唱片發行廠牌之一Music On Vinyl 首度登台，高品質 180g 壓片</p>
+                            </div>
+                            <a href="highway-61-revisited.html"
+                                class="d-block font-family-bebas-neue text-center text-decoration-none py-3 stretched-link">MORE</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 promo-card h-100">
+                            <img src="images/album/AllThingsMustPass.jpeg" style="object-fit: cover;"
+                                class="cover-front-2" height="424" alt="Highway61Revisited-cover-front">
+                            <div class="card-body border-bottom p-lg-4">
+                                <h4 class="card-title font-family-bebas-neue">All Thing Must Pass - George Harrison</h4>
+                                <p class="card-text mb-lg-4">這張唱片反映了在 1968 年至 1970 年間，Harrison 與 Bob Dylan
+                                    等藝術家在音樂上的交流與相互影響，也見證了他作為音樂藝術家的成長：不再只是 John Lennon 與 Paul McCartney 身邊的「配角」。</p>
+                            </div>
+                            <a href="#"
+                                class="d-block font-family-bebas-neue text-center text-decoration-none py-3 stretched-link">MORE</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 promo-card h-100">
+                            <img src="images/album/Transformer.jpeg" style="object-fit: cover;" class="cover-front-3"
+                                height="424" alt="Highway61Revisited-cover-front">
+                            <div class="card-body border-bottom p-lg-4">
+                                <h4 class="card-title font-family-bebas-neue">Transformer - Lou Reed</h4>
+                                <p class="card-text mb-lg-4">
+                                    ★ 滾石雜誌「史上 500 經典專輯」第194名、NME 雜誌「史上最佳 500 張專輯」第 72 名<br>
+                                    ★ AMG 四顆星半、滾石雜誌四顆星、Pitchfork 8.4 <br>
+                                    ★ 德國黑膠唱片名廠 Speakers Corner 經典重刻，高品質 180g 壓片
+                                </p>
+                            </div>
+                            <a href="#"
+                                class="d-block font-family-bebas-neue text-center text-decoration-none py-3 stretched-link">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="promo.html" class="btn btn-outline-primary px-5 rounded-pill pill-btn-bg-secondary mt-5">
+                        看更多唱片
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 表尾 -->
+    <footer class="bg-secondary py-5">
+        <div class="container pt-lg-5">
+            <!-- 電腦版 -->
+            <div class="row justify-content-center gy-5 row-cols-1 row-cols-lg-4 d-none d-lg-flex border-1 border-top">
+                <!-- 所有商品 -->
+                <div class="col">
+                    <h3 class="fs-5 mb-4">所有商品</h3>
+                    <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                        <li>
+                            <a href="#" class="link-hover-underline">黑膠唱片</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">CD</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">卡帶</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">書籍雜誌</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">影音商品</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">週邊商品</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 代理廠牌 -->
+                <div class="col">
+                    <h3 class="fs-5 mb-4">代理廠牌</h3>
+                    <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                        <li>
+                            <a href="#" class="link-hover-underline">Analogphonic</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Big 3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Cembal D'amour</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Country Stars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Deluxe</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Future Days Recordings</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">GMSN</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Golden Stars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Goldies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Jazz Hour</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Lipkind Productions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Music On Vinyl</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Pop Legends</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 全台分店 -->
+                <div class="col">
+                    <h3 class="fs-5 mb-4">全台分店</h3>
+                    <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                        <li>
+                            <a href="#" class="link-hover-underline">宜蘭龜山島店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">台北西門店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">新北永和店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">桃園龜山店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">新竹清大店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">苗栗公館店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">台中勤美誠品店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">台中清水店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">雲林台西店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">嘉義阿里山店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">台南北門店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">高雄五福店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">屏東九如店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">台東都蘭店</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-hover-underline">花蓮東大門店</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 與我們聯絡 -->
+                <div class="col">
+                    <h3 class="fs-5 mb-4">與我們聯絡</h3>
+                    <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:02-29295627" class="text-decoration-none">02-29295627</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-send"></i>
+                            <a href="mailto:liferecord@gmail.com" class="text-decoration-none">liferecord@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <a href="#" class="text-decoration-none">234新北市永和區文化路90巷36號2樓</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-clock-fill"></i>
+                            <a href="#" class="text-decoration-none">週一~週五 10:00~18:00</a>
+                        </li>
+                        <li>
+                            <h3 class="fs-5 my-4">加入我們</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="link-hover-underline">工作機會</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 手機版 -->
+            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top border-primary"
+                id="accordionFlushExample">
+                <!-- 所有商品 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-secondary shadow-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            所有商品
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                                <li>
+                                    <a href="#" class="link-hover-underline">黑膠唱片</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">CD</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">卡帶</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">書籍雜誌</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">影音商品</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">週邊商品</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 代理廠牌 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed bg-secondary shadow-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            代理廠牌
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                                <li>
+                                    <a href="#" class="link-hover-underline">Analogphonic</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Big 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Cembal D'amour</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Country Stars</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Deluxe</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Future Days Recordings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">GMSN</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Golden Stars</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Goldies</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Jazz Hour</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Lipkind Productions</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Music On Vinyl</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Pop Legends</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 全台分店 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed bg-secondary shadow-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            全台分店
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                                <li>
+                                    <a href="#" class="link-hover-underline">宜蘭龜山島店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">台北西門店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">新北永和店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">桃園龜山店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">新竹清大店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">苗栗公館店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">台中勤美誠品店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">台中清水店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">雲林台西店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">嘉義阿里山店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">台南北門店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">高雄五福店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">屏東九如店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">台東都蘭店</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-hover-underline">花蓮東大門店</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 與我們聯絡 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed bg-secondary shadow-none" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            與我們聯絡
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
+                                <li>
+                                    <a href="tel:02-29295627" class="text-decoration-none">02-29295627</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:liferecord@gmail.com"
+                                        class="text-decoration-none">liferecord@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none">234新北市永和區文化路90巷36號2樓</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none">週一~週五 10:00~18:00</a>
+                                </li>
+                                <li>
+                                    <h3 class="fs-5 my-4">加入我們</h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="link-hover-underline">工作機會</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top d-flex flex-column-reverse flex-lg-row justify-content-between py-4">
+                <p class="text-center mb-0" style="font-size: 14px;">Copyright © 2022 生活唱片.All rights reserved.
+                    design by <a href="https://github.com/vvayHuang" target="blank"
+                        class="link-hover-underline">wayHuang</a>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="mx-2">
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="mx-2">
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="mx-2">
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+    <script>
+        function onYouTubeIframeAPIReady() {
+            var player;
+            player = new YT.Player('YouTubeVideoPlayerAPI', {
+                videoId: 'Nfe9HvsfhEQ',   // YouTube 影片ID
+                width: '1080',            // 播放器寬度 (px)
+                height: '720',           // 播放器高度 (px)
+                playerVars: {
+                    autoplay: 1,            // 自動播放影片
+                    controls: 0,            // 顯示播放器
+                    showinfo: 1,            // 隱藏影片標題
+                    modestbranding: 1,      // 隱藏YouTube Logo
+                    loop: 1,                // 重覆播放
+                    playlist: 'lK7X7WfcaMQ', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                    fs: 0,                  // 隱藏全螢幕按鈕
+                    cc_load_policty: 1,     // 隱藏字幕
+                    iv_load_policy: 3,      // 隱藏影片註解
+                    autohide: 1             // 影片播放時，隱藏影片控制列
+                },
+                events: {
+                    onReady: function (e) {
+                        e.target.mute();      //播放時靜音
+                        e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
