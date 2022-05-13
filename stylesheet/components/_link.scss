@@ -7,3 +7,23 @@
 .link-active-bottom{
     border-bottom: solid 1px $primary;
 }
+.link-trans{
+    position: relative;
+    transition: .3s ease-in;
+    .link-trans-span::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border-bottom: 1px solid rgba($color: $primary, $alpha: .9);
+        opacity: 0;
+    }
+    &:hover{
+        .link-trans-span::after{
+            opacity: 1;
+           
+        }
+    }
+}

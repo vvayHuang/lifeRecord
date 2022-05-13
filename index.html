@@ -8,13 +8,35 @@
     <link rel="shortcut icon" href="./images/logo/logo-favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./stylesheet/css/all.css">
     <script async src="//www.youtube.com/iframe_api"></script>
-    <title>生活唱片 ｜ NO RECORD, NO LIFE</title>
-    <style>
-        iframe {
-            width: 100vw;
-            height: 100vh;
+    <script>
+        function onYouTubeIframeAPIReady() {
+            var player;
+            player = new YT.Player('YouTubeVideoPlayerAPI', {
+                videoId: 'Nfe9HvsfhEQ',   // YouTube 影片ID
+                width: '1080',            // 播放器寬度 (px)
+                height: '720',           // 播放器高度 (px)
+                playerVars: {
+                    autoplay: 1,            // 自動播放影片
+                    controls: 0,            // 顯示播放器
+                    showinfo: 1,            // 隱藏影片標題
+                    modestbranding: 1,      // 隱藏YouTube Logo
+                    loop: 1,                // 重覆播放
+                    playlist: 'lK7X7WfcaMQ', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                    fs: 0,                  // 隱藏全螢幕按鈕
+                    cc_load_policty: 1,     // 隱藏字幕
+                    iv_load_policy: 3,      // 隱藏影片註解
+                    autohide: 1             // 影片播放時，隱藏影片控制列
+                },
+                events: {
+                    onReady: function (e) {
+                        e.target.mute();      //播放時靜音
+                        e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+                    }
+                }
+            });
         }
-    </style>
+    </script>
+    <title>生活唱片 ｜ NO RECORD, NO LIFE</title>
 </head>
 
 <body>
@@ -30,17 +52,10 @@
             <a class="navbar-brand" href="index.html">
                 <img src="./images/logo/logo-title.png" height="40" alt="生活唱片logo">
             </a>
-            <div class="input-group flex-nowrap w-25 rounded-pill border bg-secondary bg-opacity-50 d-lg-flex d-none">
-                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="search"
-                    aria-label="search" aria-describedby="addon-wrapping">
-                <button class="btn btn-outline-secondary bg-transparent border-0" type="button" id="button-addon1">
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="bi bi-list"></i>
             </button>
             <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -63,13 +78,19 @@
                 <div class="offcanvas-body justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="shopping-guide.html">購物說明</a>
+                            <a class="nav-link p-0 link-trans" href="shopping-guide.html">
+                                <span class="link-trans-span">購物說明</span>
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="store.html">所有商品</a>
+                            <a class="nav-link p-0 link-trans" href="store.html">
+                                <span class="link-trans-span">所有商品</span cl>
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="promo.html">最新推薦</a>
+                            <a class="nav-link p-0 link-trans" href="promo.html">
+                                <span class="link-trans-span">最新推薦</span>
+                            </a>
                         </li>
                         <li class="nav-item my-4 my-lg-0">
                             <a class="nav-link btn btn-secondary btn-sm px-5 rounded-24px"
@@ -82,7 +103,7 @@
     </nav>
     <!-- 封面 -->
     <section class="hero">
-        <div class="videobox">
+        <div class="hero-videobox">
             <div id="YouTubeVideoPlayerAPI"></div>
         </div>
         <div class="font-family-bebas-neue hero-content text-nowrap  translate-middle">
@@ -127,7 +148,7 @@
                             <img src="./images/album/TitanicRising.png" class="card-img" alt="Titanic Rising">
                             <div class="card-img-overlay font-family-bebas-neue text-white">
                                 <div class="bottom-0 position-absolute mb-2">
-                                    <h5 class="card-title fs-6">Weyes</h5>
+                                    <h5 class="card-title fs-6">Weyes Blood</h5>
                                     <p class="card-text fs-4">Titanic Rising</p>
                                 </div>
                             </div>
@@ -385,8 +406,7 @@
                 </div>
             </div>
             <!-- 手機版 -->
-            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top border-primary"
-                id="accordionFlushExample">
+            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top" id="accordionFlushExample">
                 <!-- 所有商品 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -617,32 +637,13 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
         </script>
     <script>
-        function onYouTubeIframeAPIReady() {
-            var player;
-            player = new YT.Player('YouTubeVideoPlayerAPI', {
-                videoId: 'Nfe9HvsfhEQ',   // YouTube 影片ID
-                width: '1080',            // 播放器寬度 (px)
-                height: '720',           // 播放器高度 (px)
-                playerVars: {
-                    autoplay: 1,            // 自動播放影片
-                    controls: 0,            // 顯示播放器
-                    showinfo: 1,            // 隱藏影片標題
-                    modestbranding: 1,      // 隱藏YouTube Logo
-                    loop: 1,                // 重覆播放
-                    playlist: 'lK7X7WfcaMQ', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
-                    fs: 0,                  // 隱藏全螢幕按鈕
-                    cc_load_policty: 1,     // 隱藏字幕
-                    iv_load_policy: 3,      // 隱藏影片註解
-                    autohide: 1             // 影片播放時，隱藏影片控制列
-                },
-                events: {
-                    onReady: function (e) {
-                        e.target.mute();      //播放時靜音
-                        e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
-                    }
-                }
-            });
-        }
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+        var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+  container: 'body'
+})
     </script>
 </body>
 
