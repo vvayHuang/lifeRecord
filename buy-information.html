@@ -12,13 +12,16 @@
 
 <body data-bs-spy="scroll" data-bs-target="#list-example">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-lg-top bg-white bg-opacity-75 backdrop-filter-blur-lg-5" style="z-index: 2;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow bg-opacity-75 backdrop-filter-blur-5" style="z-index: 1021;">
         <div class="container">
+            <button class="navbar-toggler btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-expanded="false" aria-controls="offcanvasScrolling">
+                <i class="bi bi-arrows-collapse fs-4"></i>
+              </button>
             <a class="navbar-brand" href="index.html">
                 <img src="./images/logo/logo-title.png" height="40" alt="生活唱片logo">
             </a>
             <div class="input-group flex-nowrap w-25 rounded-pill border bg-secondary bg-opacity-50 d-lg-flex d-none">
-                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="search"
+                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="要找什麼唱片嗎"
                     aria-label="search" aria-describedby="addon-wrapping">
                 <button class="btn btn-outline-secondary bg-transparent border-0" type="button" id="button-addon1">
                     <i class="bi bi-search"></i>
@@ -50,16 +53,20 @@
                 <div class="offcanvas-body justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="shopping-guide.html">購物說明</a>
+                            <a class="nav-link p-0" href="shopping-guide.html">購物說明
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="store.html">所有商品</a>
+                            <a class="nav-link p-0" href="news.html">最新情報
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="promo.html">最新推薦</a>
+                            <a class="nav-link p-0" href="store.html">商店
+                            </a>
                         </li>
                         <li class="nav-item my-4 my-lg-0">
-                            <a class="nav-link active btn btn-secondary btn-sm px-5 rounded-24px" href="buy-information.html">填寫訂購資訊</a>
+                            <a class="nav-link active btn btn-secondary btn-sm px-5 rounded-24px"
+                                href="buy-information.html">填寫訂購資訊</a>
                         </li>
                     </ul>
                 </div>
@@ -512,55 +519,16 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 代理廠牌 -->
+                <!-- 精選廠牌 -->
                 <div class="col">
-                    <h3 class="fs-5 mb-4">代理廠牌</h3>
+                    <h3 class="fs-5 mb-4">精選廠牌</h3>
                     <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
-                        <li>
-                            <a href="#" class="link-hover-underline">Analogphonic</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Big 3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Cembal D'amour</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Country Stars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Deluxe</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Future Days Recordings</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">GMSN</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Golden Stars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Goldies</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Jazz Hour</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Lipkind Productions</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Music On Vinyl</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Pop Legends</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
-                        </li>
+                        <li><a class="link-hover-underline" href="#">Arts & Crafts</a></li>
+                        <li><a class="link-hover-underline" href="#">Erased Tapes</a></li>
+                        <li><a class="link-hover-underline" href="#">Kranky</a></li>
+                        <li><a class="link-hover-underline" href="#">Numero Group</a></li>
+                        <li><a class="link-hover-underline" href="#">Sacred Bones</a></li>
+                        <li><a class="link-hover-underline" href="#">Sub Pop</a></li>
                     </ul>
                 </div>
                 <!-- 全台分店 -->
@@ -646,8 +614,7 @@
                 </div>
             </div>
             <!-- 手機版 -->
-            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top"
-                id="accordionFlushExample">
+            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top" id="accordionFlushExample">
                 <!-- 所有商品 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -683,64 +650,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- 代理廠牌 -->
+                <!-- 精選廠牌 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed bg-secondary shadow-none" type="button"
                             data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                             aria-controls="flush-collapseOne">
-                            代理廠牌
+                            精選廠牌
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body bg-secondary">
                             <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
-                                <li>
-                                    <a href="#" class="link-hover-underline">Analogphonic</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Big 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Cembal D'amour</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Country Stars</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Deluxe</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Future Days Recordings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">GMSN</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Golden Stars</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Goldies</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Jazz Hour</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Lipkind Productions</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Music On Vinyl</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Pop Legends</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
-                                </li>
+                                <li><a class="link-hover-underline" href="#">Arts & Crafts</a></li>
+                                <li><a class="link-hover-underline" href="#">Erased Tapes</a></li>
+                                <li><a class="link-hover-underline" href="#">Kranky</a></li>
+                                <li><a class="link-hover-underline" href="#">Numero Group</a></li>
+                                <li><a class="link-hover-underline" href="#">Sacred Bones</a></li>
+                                <li><a class="link-hover-underline" href="#">Sub Pop</a></li>
                             </ul>
                         </div>
                     </div>
@@ -846,7 +774,8 @@
             </div>
             <div class="border-top d-flex flex-column-reverse flex-lg-row justify-content-between py-4">
                 <p class="text-center mb-0" style="font-size: 14px;">Copyright © 2022 生活唱片.All rights reserved.
-                    design by <a href="https://github.com/vvayHuang" target="blank" class="link-hover-underline">wayHuang</a>
+                    design by <a href="https://github.com/vvayHuang" target="blank"
+                        class="link-hover-underline">wayHuang</a>
                 </p>
                 <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-2">

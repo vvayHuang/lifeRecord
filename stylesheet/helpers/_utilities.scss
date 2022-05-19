@@ -106,6 +106,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true,
       property: border-top,
       values: (
         null: $border-width solid $border-color,
@@ -149,6 +150,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive:true,
       property: width,
       class: w,
       values: (

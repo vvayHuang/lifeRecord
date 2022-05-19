@@ -17,3 +17,17 @@
         height: 203px;
     }
 }
+.album-img{
+    height: 300px;
+    object-fit: contain;
+    @media (min-width:376px) {
+        height: 600px;
+    }
+}
+.news-img{
+    height: 135px;
+    object-fit: contain;
+}
+.ranking-img{
+    max-height: 134px;
+}

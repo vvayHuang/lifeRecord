@@ -12,13 +12,13 @@
 
 <body>
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-lg-top bg-white bg-opacity-75 backdrop-filter-blur-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="./images/logo/logo-title.png" height="40" alt="生活唱片logo">
             </a>
             <div class="input-group flex-nowrap w-25 rounded-pill border bg-secondary bg-opacity-50 d-lg-flex d-none">
-                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="search"
+                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="要找什麼唱片嗎"
                     aria-label="search" aria-describedby="addon-wrapping">
                 <button class="btn btn-outline-secondary bg-transparent border-0" type="button" id="button-addon1">
                     <i class="bi bi-search"></i>
@@ -50,16 +50,20 @@
                 <div class="offcanvas-body justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="shopping-guide.html">購物說明</a>
+                            <a class="nav-link p-0" href="shopping-guide.html">購物說明
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="store.html">所有商品</a>
+                            <a class="nav-link p-0" href="news.html">最新情報
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link active p-0 link-active-bottom" href="promo.html">最新推薦</a>
+                            <a class="nav-link active p-0" href="store.html">商店
+                            </a>
                         </li>
                         <li class="nav-item my-4 my-lg-0">
-                            <a class="nav-link btn btn-secondary btn-sm px-5 rounded-24px" href="buy-information.html">填寫訂購資訊</a>
+                            <a class="nav-link btn btn-secondary btn-sm px-5 rounded-24px"
+                                href="buy-information.html">填寫訂購資訊</a>
                         </li>
                     </ul>
                 </div>
@@ -67,121 +71,186 @@
         </div>
     </nav>
     <!-- 內容 -->
-    <section class="pb-lg-7 pb-5 pt-lg-0 pt-4">
+    <section class="pb-lg-7 pb-5 pt-4">
         <div class="container">
             <!-- Highway 61 Revisited -->
-            <div class="row gy-5 flex-column-reverse flex-lg-row">
+            <div class="row gy-5">
                 <!-- 左欄 -->
-                <div class="col-lg-6">
-                    <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/album/Highway61Revisited.jpeg" class="d-block w-100" style="height: 600px; object-fit: cover;" alt="Highway61Revisited-cover-front">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/album/Highway61Revisited-back.jpeg" class="d-block w-100" style="height: 600px; object-fit: cover;" alt="Highway61Revisited-cover-back">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="videobox">
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XOtw_GVEcOU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
-                </div>
-                <!-- 右欄 -->
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow sticky-lg-top">
                         <div class="card-body p-4">
-                            <h2 class="card-title text-center mb-lg-5 mb-4 font-family-bebas-neue">
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"
+                                            class="link-hover-underline"><small>商店</small></a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page"><small>最新推薦</small></li>
+                                </ol>
+                            </nav>
+                            <div>
+                                <a href="#"><span class="badge text-primary px-0">#bobdylan</span></a>
+                                <a href="#"><span class="badge text-primary px-0">#highway61revisited</span></a>
+                                <a href="#"><span class="badge text-primary px-0">#cd</span></a>
+                                <a href="#"><span class="badge text-primary px-0">#vinyl</span></a>
+                            </div>
+                            <h2 class="card-title font-family-bebas-neue">
                                 Bob Dylan - Highway 61 Revisited
                             </h2>
-                            <p class="card-text ">
-                                ★ 滾石雜誌、AMG 五顆星滿分一致推崇，滾石五百大專輯第四名
-                            </p>
-                            <p class="card-text">
-                                ★ 收錄膾炙人口經典歌曲〈Like A Rolling Stone〉等 9 首創作，MONO 重製混音版
-                            </p>
-                            <p class="card-text">
-                                ★ 歐陸最大經典黑膠唱片發行廠牌之一Music On Vinyl 首度登台，高品質 180g 壓片
-                            </p>
-                            <p class="card-text">
-                                深獲全美傳媒熱烈激賞 - AMG、滾石雜誌五顆星滿分評價、滾石雜誌五百大專輯第4名。Bob Dylan
-                                引領新民謠復興顛峰之作，也深深影響整個世代並為搖滾樂樹立典範，成就不可動搖的大師地位。專輯中收錄 Bob Dylan 膾炙人口經典歌曲〈Like A Rolling
-                                Stone〉。重新混音處理單聲道版本。
-                            </p>
-                            <p class="card-text">
-                                曲目: <br>
-                                Side A<br>
-                            </p>
-                            <ol class="card-text">
-                                <li>Like A Rolling Stone</li>
-                                <li>Tombstone Blues</li>
-                                <li>It Takes A Lot To Laugh, It Takes A Train To Cry</li>
-                                <li>From A Buick 6</li>
-                                <li>Ballad Of A Thin Man</li>
-                            </ol>
-                            <p class="card-text">
-                                曲目: <br>
-                                Side B<br>
-                            </p>
-                            <ol class="card-text">
-                                <li>Queen Jane Approximately</li>
-                                <li>Highway '61 Revisited</li>
-                                <li>Just Like Tom Thumb's Blues</li>
-                                <li>Desolation Row</li>
-                            </ol>
-                            <h3 class="card-title fs-6">建議售價</h3>
-                            <p class="card-text fs-4 text-danger">NT$880</p>
+                            <p class="card-text fs-4">NT$880</p>
+                            <p class="card-text">1965年8月30日發行</p>
                             <h3 class="card-title fs-6">唱片編號</h3>
                             <p class="card-text">MOVLP244</p>
                             <h3 class="card-title fs-6">供貨狀況</h3>
-                            <div class="mb-4">
-                                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off"
-                                    disabled>
-                                <label class="btn btn-secondary" for="option3">已停產</label>
+                            <div class="my-4">
+                                <button type="button" class="btn position-relative" disabled>
+                                    <i class="bi bi-vinyl-fill fs-2"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                    <p class="card-text">黑膠</p>
+                                </button>
+                                <button type="button" class="btn position-relative" disabled>
+                                    <i class="bi bi-disc-fill fs-2"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                    <p class="card-text">CD</p>
+                                </button>
                             </div>
                             <div class="mb-4">
                                 <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" data-bs-whatever="">賣完了可是你很想買這張</button>
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">聯絡信箱</label>
-                                                        <input type="email" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="message-text" class="col-form-label">留言</label>
-                                                        <textarea class="form-control" id="message-text"
-                                                            placeholder="你想買哪張？"></textarea>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">關閉</button>
-                                                <button type="button" class="btn btn-primary">送出</button>
-                                            </div>
+                                    data-bs-target="#exampleModal" data-bs-whatever="">我想買</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">聯絡信箱</label>
+                                            <input type="email" class="form-control" id="recipient-name">
                                         </div>
-                                    </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">留言</label>
+                                            <textarea class="form-control" id="message-text"
+                                                placeholder="你想買哪張？"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                                    <button type="button" class="btn btn-primary">送出</button>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <!-- 右欄 -->
+                <div class="col-lg-8">
+                    <div id="carouselExampleFade" class="carousel slide carousel-dark " data-bs-touch="false" data-bs-interval="false" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/album/Highway61Revisited.jpeg" class="d-block w-100 album-img"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/album/Highway61Revisited-back.jpeg" class="d-block w-100 album-img"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p class="card-text mt-4">
+                        ★ 滾石雜誌、AMG 五顆星滿分一致推崇，滾石五百大專輯第四名<br><br>★ 收錄膾炙人口經典歌曲〈Like A Rolling Stone〉等 9 首創作，MONO 重製混音版<br><br>★ 歐陸最大經典黑膠唱片發行廠牌之一Music On Vinyl 首度登台，高品質 180g 壓片<br><br>
+                        深獲全美傳媒熱烈激賞 - AMG、滾石雜誌五顆星滿分評價、滾石雜誌五百大專輯第4名。Bob Dylan 引領新民謠復興顛峰之作，也深深影響整個世代並為搖滾樂樹立典範，成就不可動搖的大師地位。專輯中收錄 Bob Dylan 膾炙人口經典歌曲〈Like A Rolling Stone〉。重新混音處理單聲道版本。
+
+
+                    </p>
+                    <p class="card-text">
+                        曲目:
+                        <ol>
+                            <li>Like A Rolling Stone</li>
+                            <li>Tombstone Blues</li>
+                            <li>It Takes A Lot To Laugh, It Takes A Train To Cry</li>
+                            <li>From A Buick 6</li>
+                            <li>Ballad Of A Thin Man</li>
+                            <li>Queen Jane Approximately</li>
+                            <li>Highway '61 Revisited</li>
+                            <li>Just Like Tom Thumb's Blues</li>
+                            <li>From A Buick 6</li>
+                            <li>Desolation Row</li>
+                        </ol>
+                    </p>
+                    <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/tw/album/highway-61-revisited/201281514"></iframe>
+                </div>
+            </div>
+            <!-- 你可能也會喜歡... -->
+            <h3 class="mt-7">你可能也會喜歡...</h3>
+            <div class="row row-cols-lg-4 row-cols-2 g-2">
+                <div class="col">
+                    <div class="card mb-3 h-100">
+                        <img src="images/album/LetItBeNaked.jpeg" class="card-img-top" alt="Highway61Revisited">
+                        <div class="card-body">
+                            <p class="card-text mb-0"><small class="text-muted">搖滾</small></p>
+                            <h4 class="card-title fs-6">The Beatles - Let it be... Nacked</h4>
+                            <p class="card-text">NT$ 880</p>
+                        </div>
+                        <a href="let-it-be-naked.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100">
+                        <img src="images/album/Transformer.jpeg" class="card-img-top" alt="Transformer">
+                        <div class="card-body">
+                            <p class="card-text mb-0"><small class="text-muted">另類</small></p>
+                            <h4 class="card-title fs-6">Lou Reed - Transformer</h4>
+                            <p class="card-text">NT$ 880</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100">
+                        <img src="images/album/AllThingsMustPass.jpeg" class="card-img-top" alt="AllThingsMustPass">
+                        <div class="card-body">
+                            <p class="card-text mb-0"><small class="text-muted">搖滾</small></p>
+                            <h4 class="card-title fs-6">George Harrison - All Things Must Pass</h4>
+                            <p class="card-text">NT$ 880</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100">
+                        <img src="images/album/TitanicRising.png" class="card-img-top" alt="AllThingsMustPass">
+                        <div class="card-body">
+                            <p class="card-text mb-0"><small class="text-muted">另類</small></p>
+                            <h4 class="card-title fs-6">Weyes Blood - Titanic Rising</h4>
+                            <p class="card-text">NT$ 980</p>
+                        </div>
+                        <a href="titanic-rising.html" class="stretched-link"></a>
                     </div>
                 </div>
             </div>
@@ -216,55 +285,16 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 代理廠牌 -->
+                <!-- 精選廠牌 -->
                 <div class="col">
-                    <h3 class="fs-5 mb-4">代理廠牌</h3>
+                    <h3 class="fs-5 mb-4">精選廠牌</h3>
                     <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
-                        <li>
-                            <a href="#" class="link-hover-underline">Analogphonic</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Big 3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Cembal D'amour</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Country Stars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Deluxe</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Future Days Recordings</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">GMSN</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Golden Stars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Goldies</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Jazz Hour</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Lipkind Productions</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Music On Vinyl</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Pop Legends</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
-                        </li>
+                        <li><a class="link-hover-underline" href="#">Arts & Crafts</a></li>
+                        <li><a class="link-hover-underline" href="#">Erased Tapes</a></li>
+                        <li><a class="link-hover-underline" href="#">Kranky</a></li>
+                        <li><a class="link-hover-underline" href="#">Numero Group</a></li>
+                        <li><a class="link-hover-underline" href="#">Sacred Bones</a></li>
+                        <li><a class="link-hover-underline" href="#">Sub Pop</a></li>
                     </ul>
                 </div>
                 <!-- 全台分店 -->
@@ -350,8 +380,7 @@
                 </div>
             </div>
             <!-- 手機版 -->
-            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top"
-                id="accordionFlushExample">
+            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top" id="accordionFlushExample">
                 <!-- 所有商品 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -387,64 +416,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- 代理廠牌 -->
+                <!-- 精選廠牌 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed bg-secondary shadow-none" type="button"
                             data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                             aria-controls="flush-collapseOne">
-                            代理廠牌
+                            精選廠牌
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body bg-secondary">
                             <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
-                                <li>
-                                    <a href="#" class="link-hover-underline">Analogphonic</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Big 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Cembal D'amour</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Country Stars</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Deluxe</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Future Days Recordings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">GMSN</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Golden Stars</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Goldies</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Jazz Hour</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Lipkind Productions</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Music On Vinyl</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Pop Legends</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
-                                </li>
+                                <li><a class="link-hover-underline" href="#">Arts & Crafts</a></li>
+                                <li><a class="link-hover-underline" href="#">Erased Tapes</a></li>
+                                <li><a class="link-hover-underline" href="#">Kranky</a></li>
+                                <li><a class="link-hover-underline" href="#">Numero Group</a></li>
+                                <li><a class="link-hover-underline" href="#">Sacred Bones</a></li>
+                                <li><a class="link-hover-underline" href="#">Sub Pop</a></li>
                             </ul>
                         </div>
                     </div>
@@ -550,7 +540,8 @@
             </div>
             <div class="border-top d-flex flex-column-reverse flex-lg-row justify-content-between py-4">
                 <p class="text-center mb-0" style="font-size: 14px;">Copyright © 2022 生活唱片.All rights reserved.
-                    design by <a href="https://github.com/vvayHuang" target="blank" class="link-hover-underline">wayHuang</a>
+                    design by <a href="https://github.com/vvayHuang" target="blank"
+                        class="link-hover-underline">wayHuang</a>
                 </p>
                 <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-2">

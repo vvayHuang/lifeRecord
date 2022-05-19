@@ -14,13 +14,16 @@
 
 <body>
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-lg-top bg-white bg-opacity-75 backdrop-filter-blur-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow bg-opacity-75 backdrop-filter-blur-5" style="z-index: 1021;">
         <div class="container">
+            <button class="navbar-toggler btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-expanded="false" aria-controls="offcanvasScrolling">
+                <i class="bi bi-arrows-collapse fs-4"></i>
+              </button>
             <a class="navbar-brand" href="index.html">
                 <img src="./images/logo/logo-title.png" height="40" alt="生活唱片logo">
             </a>
             <div class="input-group flex-nowrap w-25 rounded-pill border bg-secondary bg-opacity-50 d-lg-flex d-none">
-                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="search"
+                <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="要找什麼唱片嗎"
                     aria-label="search" aria-describedby="addon-wrapping">
                 <button class="btn btn-outline-secondary bg-transparent border-0" type="button" id="button-addon1">
                     <i class="bi bi-search"></i>
@@ -52,13 +55,16 @@
                 <div class="offcanvas-body justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="shopping-guide.html">購物說明</a>
+                            <a class="nav-link p-0" href="shopping-guide.html">購物說明
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link p-0" href="store.html">所有商品</a>
+                            <a class="nav-link active p-0" href="news.html">最新情報
+                            </a>
                         </li>
                         <li class="nav-item mx-lg-4 my-4 my-lg-0">
-                            <a class="nav-link active p-0 link-active-bottom" href="promo.html">最新推薦</a>
+                            <a class="nav-link p-0" href="store.html">商店
+                            </a>
                         </li>
                         <li class="nav-item my-4 my-lg-0">
                             <a class="nav-link btn btn-secondary btn-sm px-5 rounded-24px"
@@ -73,72 +79,207 @@
     <section class="pb-lg-7 pb-5 pt-lg-0 pt-4">
         <div class="container">
             <h2 class="text-center pt-lg-5 mb-lg-5">
-                最新推薦
+                最新情報
             </h2>
-            <div class="row row-cols-lg-3 row-cols-1 gy-3">
-                <div class="col">
-                    <div class="card border-0 promo-card h-100 promo-card-1">
-                        <img src="images/album/Highway61Revisited.jpeg" style="object-fit: cover;" class="cover-front-1" height="424" alt="Highway61Revisited-cover-front">
-                        <img src="images/album/Highway61Revisited-back.jpeg" style="object-fit: fill;" class="cover-back-1 d-none" height="424" alt="Highway61Revisited-cover-back">
-                        <div class="card-body border-bottom p-lg-4">
-                            <h4 class="card-title font-family-bebas-neue">Highway 61 Revisited - Bob Dylan</h4>
-                            <p class="card-text mb-lg-4">★ 滾石雜誌、AMG 五顆星滿分一致推崇，滾石五百大專輯第四名<br>
-                                ★ 收錄膾炙人口經典歌曲〈Like A Rolling Stone〉等 9 首創作，MONO 重製混音版<br>
-                                ★ 歐陸最大經典黑膠唱片發行廠牌之一Music On Vinyl 首度登台，高品質 180g 壓片</p>
-                        </div>
-                        <a href="highway-61-revisited.html"
-                            class="d-block font-family-bebas-neue text-center text-decoration-none py-3 stretched-link">MORE</a>
+            <div class="row justify-content-between">
+                <div class="col col-lg-2 border-end border-2 navbar-expand-lg sticky-lg-top">
+                    <div class="offcanvas offcanvas-start w-75 w-lg-auto border-top border-top-lg-0" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style=" top: 88px;">
+                        <ul class="nav nav-pills list-unstyled mb-4 row-cols-1" id="
+                            myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#freshnews" class="nav-link active list-trans text-decoration-none" id="freshnews-tab"
+                                    data-bs-toggle="tab" type="button" role="tab" aria-controls="freshnews"
+                                    aria-selected="true">
+                                    <span class="ps-3"><i class="bi bi-play-fill"></i></span>
+                                    <h4 class="d-inline-block fs-6 mb-0">最新消息</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#headnews" class="nav-link list-trans text-decoration-none" id="headnews-tab"
+                                    data-bs-toggle="tab" type="button" role="tab" aria-controls="headnews"
+                                    aria-selected="true">
+                                    <span class="ps-3"><i class="bi bi-play-fill"></i></span>
+                                    <h4 class="d-inline-block fs-6 mb-0">頭條新聞</h4>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card border-0 promo-card h-100 promo-card-2">
-                        <img src="images/album/AllThingsMustPass.jpeg" style="object-fit: cover;" class="cover-front-2" height="424" alt="Highway61Revisited-cover-front">
-                        <img src="images/album/AllThingsMustPass-back.png" style="object-fit: fill;" class="cover-back-2 d-none" height="424" alt="Highway61Revisited-cover-back">
-                        <div class="card-body border-bottom p-lg-4">
-                            <h4 class="card-title font-family-bebas-neue">All Thing Must Pass - George Harrison</h4>
-                            <p class="card-text mb-lg-4">這張唱片反映了在 1968 年至 1970 年間，Harrison 與 Bob Dylan
-                                等藝術家在音樂上的交流與相互影響，也見證了他作為音樂藝術家的成長：不再只是 John Lennon 與 Paul McCartney 身邊的「配角」。</p>
+                <div class="col-lg-10 tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="freshnews" role="tabpanel" aria-labelledby="freshnews">
+                        <div class="row row-cols-1 gy-4">
+                            <div class="col">
+                                <div class="card border-0 border-bottom border-2">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-md-4">
+                                            <a href="20220420-dominos.html">
+                                                <img src="images/Domino-sm.jpeg"
+                                                    class="news-img w-100" alt="20 年友誼牽成，倫敦最具影響力的獨立廠牌 Domino 重回台灣">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-lg-4">
+                                                <h4 class="card-title font-family-bebas-neue"><a href="20220420-dominos.html" class="text-decoration-none">20 年友誼牽成，倫敦最具影響力的獨立廠牌 Domino 重回台灣</a></h4>
+                                                <p class="card-text mb-lg-4">台灣獨立音樂廠牌小白兔唱片近期正式在台代理倫敦成立將近 30 年的引響力獨立廠牌之一 Domino， 為兩個音樂品牌將近 20 年的台、英友誼開啟嶄新的一頁。</p>
+                                                <div class="card-text fw-light">
+                                                    編輯 : Kylie Yeh<span class="px-2">/</span><time>Apr 20, 2022</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 border-bottom border-2">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="images/postcard-sm.jpeg"
+                                                    class="news-img w-100" alt="店內限定活動」郵購小卡回饋">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-lg-4">
+                                                <h4 class="card-title font-family-bebas-neue"><a href="#" class="text-decoration-none">店內限定活動」郵購小卡回饋</a></h4>
+                                                <p class="card-text mb-lg-4">現在，我們就要讓郵購小卡的魔法解封！</p>
+                                                <div class="card-text fw-light">
+                                                    編輯 : XL<span class="px-2">/</span><time>Apr 1, 2022</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 border-bottom border-2">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="images/2022goods-sm.jpeg"
+                                                    class="news-img w-100" alt="2022 小白兔周邊商品：飄耳兔吸水杯墊">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-lg-4">
+                                                <h4 class="card-title font-family-bebas-neue"><a href="#" class="text-decoration-none">2022 小白兔周邊商品：飄耳兔吸水杯墊</a></h4>
+                                                <p class="card-text mb-lg-4">2022 小白兔周邊商品「飄耳兔吸水陶瓷杯墊」<br>兩款造型，四組配色，可成套收藏也能單獨入手</p>
+                                                <div class="card-text fw-light">
+                                                    編輯 : 小陳<span class="px-2">/</span><time>March 20, 2022</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 border-bottom border-2">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="images/2020rsd-sm.jpeg"
+                                                    class="news-img w-100" alt="2020.09.26 Record Store Day Drops 世界唱片行日 Part.2">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-lg-4">
+                                                <h4 class="card-title font-family-bebas-neue"><a href="#" class="text-decoration-none">2020.09.26 Record Store Day Drops 世界唱片行日 Part.2</a></h4>
+                                                <p class="card-text mb-lg-4">一年一度的「 Record Store Day 世界唱片行日」是全世界唱片迷期待的日子，每年的這個時候將會有五花八門的「限定限量發行」在這天上架</p>
+                                                <div class="card-text fw-light">
+                                                    編輯 : wayHuang<span class="px-2">/</span><time>Set 26, 2020</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 border-bottom border-2">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="images/ciacadainterview-sm.jpeg"
+                                                    class="news-img w-100" alt="尋找散落的時光—— Cicada 團長江致潔訪談">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-lg-4">
+                                                <h4 class="card-title font-family-bebas-neue"><a href="#" class="text-decoration-none">尋找散落的時光—— Cicada 團長江致潔訪談</a></h4>
+                                                <p class="card-text mb-lg-4">Cicada 經過 10 多年，江致潔一直是作曲核心，作為樂團首張專輯《散落的時光》無疑是相當重要的，即使之後重新編排錄製了〈湖面的盡頭〉等經典曲目，原版專輯仍代表了第一次錄音、嘗試實驗的精神、以及直接展現的力量。</p>
+                                                <div class="card-text fw-light">
+                                                    編輯 : wayHuang<span class="px-2">/</span><time>May 6, 2020</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="promo-dai.html"
-                            class="d-block font-family-bebas-neue text-center text-decoration-none py-3 stretched-link">MORE</a>
+                        <nav aria-label="Page navigation" class="mt-lg-7 mt-5">
+                            <ul class="font-family-bebas-neue justify-content-center pagination fs-5">
+                                <li class="page-item">
+                                    <a class="page-link border-0 bg-transparent" href="#" aria-label="Previous">
+                                        <i class="bi bi-caret-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link border-0 bg-transparent" href="#" aria-label="Next">
+                                        <i class="bi bi-caret-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 promo-card h-100 promo-card-3">
-                        <img src="images/album/Transformer.jpeg" style="object-fit: cover;" class="cover-front-3" height="424" alt="Highway61Revisited-cover-front">
-                        <img src="images/album/Transformer-back.jpeg" style="object-fit: fill;" class="cover-back-3 d-none" height="424" alt="Highway61Revisited-cover-back">
-                        <div class="card-body border-bottom p-lg-4">
-                            <h4 class="card-title font-family-bebas-neue">Transformer - Lou Reed</h4>
-                            <p class="card-text mb-lg-4">
-                                ★ 滾石雜誌「史上 500 經典專輯」第194名、NME 雜誌「史上最佳 500 張專輯」第 72 名<br>
-                                ★ AMG 四顆星半、滾石雜誌四顆星、Pitchfork 8.4 <br>
-                                ★ 德國黑膠唱片名廠 Speakers Corner 經典重刻，高品質 180g 壓片
-                            </p>
+                    <div class="tab-pane fade" id="headnews" role="tabpanel" aria-labelledby="headnews">
+                        <div class="row row-cols-1 gy-4">
+                            <div class="col">
+                                <div class="card border-0 border-bottom border-2">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="images/Astral Spirits-sm.jpeg"
+                                                    class="news-img w-100" alt="Astral Spirits：奧斯汀 Free Jazz、即興、實驗音樂廠牌">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-lg-4">
+                                                <h4 class="card-title font-family-bebas-neue"><a href="#" class="text-decoration-none">Astral Spirits：奧斯汀 Free Jazz、即興、實驗音樂廠牌</a></h4>
+                                                <p class="card-text mb-lg-4">五年過去現在已成為一個發行超過 100 個品項的獨特廠牌，也開始推出了 CD / 黑膠版本，廠牌主理人的目標是希望讓更多不同族群、年齡、背景等... 多方面的人都能接收到這些出類拔萃的音樂。</p>
+                                                <div class="card-text fw-light">
+                                                    編輯 : Kylie Yeh<span class="px-2">/</span><time>Apr 22, 2022</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 border-bottom border-2">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="images/in-betweener-sm.jpeg"
+                                                    class="news-img w-100" alt="「in-betweener」大貫妙子的日本音樂之旅（上）">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-lg-4">
+                                                <h4 class="card-title font-family-bebas-neue"><a href="#" class="text-decoration-none">「in-betweener」大貫妙子的日本音樂之旅（上）</a></h4>
+                                                <p class="card-text mb-lg-4">去年夏天，日本電視節目《日本！我來了》在8月8日的播放節目中，有一位熱愛日本老音樂的美國人Steven，特別來找大貫妙子專輯《Sunshower》的原版1977年唱片。</p>
+                                                <div class="card-text fw-light">
+                                                    編輯 : Kylie Yeh<span class="px-2">/</span><time>March 2, 2022</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="promo-dai.html"
-                            class="d-block font-family-bebas-neue text-center text-decoration-none py-3 stretched-link">MORE</a>
                     </div>
                 </div>
             </div>
-            <nav aria-label="Page navigation" class="mt-lg-7 mt-5">
-                <ul class="font-family-bebas-neue justify-content-center pagination fs-5">
-                    <li class="page-item">
-                        <a class="page-link border-0 bg-transparent" href="#" aria-label="Previous">
-                            <i class="bi bi-caret-left"></i>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-transparent" href="#">5</a></li>
-                    <li class="page-item">
-                        <a class="page-link border-0 bg-transparent" href="#" aria-label="Next">
-                            <i class="bi bi-caret-right"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </section>
     <!-- 表尾 -->
@@ -170,55 +311,16 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 代理廠牌 -->
+                <!-- 精選廠牌 -->
                 <div class="col">
-                    <h3 class="fs-5 mb-4">代理廠牌</h3>
+                    <h3 class="fs-5 mb-4">精選廠牌</h3>
                     <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
-                        <li>
-                            <a href="#" class="link-hover-underline">Analogphonic</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Big 3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Cembal D'amour</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Country Stars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Deluxe</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Future Days Recordings</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">GMSN</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Golden Stars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Goldies</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Jazz Hour</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Lipkind Productions</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Music On Vinyl</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Pop Legends</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
-                        </li>
+                        <li><a class="link-hover-underline" href="#">Arts & Crafts</a></li>
+                        <li><a class="link-hover-underline" href="#">Erased Tapes</a></li>
+                        <li><a class="link-hover-underline" href="#">Kranky</a></li>
+                        <li><a class="link-hover-underline" href="#">Numero Group</a></li>
+                        <li><a class="link-hover-underline" href="#">Sacred Bones</a></li>
+                        <li><a class="link-hover-underline" href="#">Sub Pop</a></li>
                     </ul>
                 </div>
                 <!-- 全台分店 -->
@@ -304,8 +406,7 @@
                 </div>
             </div>
             <!-- 手機版 -->
-            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top"
-                id="accordionFlushExample">
+            <div class="accordion accordion-flush d-lg-none d-block border-1 border-top" id="accordionFlushExample">
                 <!-- 所有商品 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -341,64 +442,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- 代理廠牌 -->
+                <!-- 精選廠牌 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed bg-secondary shadow-none" type="button"
                             data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                             aria-controls="flush-collapseOne">
-                            代理廠牌
+                            精選廠牌
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body bg-secondary">
                             <ul class="flex-column gy-2 list-unstyled row" style="font-size: 12px;">
-                                <li>
-                                    <a href="#" class="link-hover-underline">Analogphonic</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Big 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Cembal D'amour</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Concerts On Vinyl</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Country Stars</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Deluxe</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Future Days Recordings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">GMSN</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Golden Stars</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Goldies</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Jazz Hour</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Lipkind Productions</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Music On Vinyl</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Pop Legends</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-hover-underline">Vinyl Passion Classical</a>
-                                </li>
+                                <li><a class="link-hover-underline" href="#">Arts & Crafts</a></li>
+                                <li><a class="link-hover-underline" href="#">Erased Tapes</a></li>
+                                <li><a class="link-hover-underline" href="#">Kranky</a></li>
+                                <li><a class="link-hover-underline" href="#">Numero Group</a></li>
+                                <li><a class="link-hover-underline" href="#">Sacred Bones</a></li>
+                                <li><a class="link-hover-underline" href="#">Sub Pop</a></li>
                             </ul>
                         </div>
                     </div>
@@ -504,7 +566,8 @@
             </div>
             <div class="border-top d-flex flex-column-reverse flex-lg-row justify-content-between py-4">
                 <p class="text-center mb-0" style="font-size: 14px;">Copyright © 2022 生活唱片.All rights reserved.
-                    design by <a href="https://github.com/vvayHuang" target="blank" class="link-hover-underline">wayHuang</a>
+                    design by <a href="https://github.com/vvayHuang" target="blank"
+                        class="link-hover-underline">wayHuang</a>
                 </p>
                 <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-2">
